@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <title>Web Chat: Using Direct Line Speech</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script crossorigin="anonymous" src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
+
+  <style>
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    #webchat {
+      height: 100%;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="webchat" role="main"></div>
+  <script>
+    (async function () {
+      const fetchCredentials = async () => {
+        const res = await fetch('https://webchat-mockbot-streaming.azurewebsites.net/speechservices/token', {
+          method: 'POST'
+        });
+
+        if (!res.ok) {
+          throw new Error('Failed to fetch authorization token and region.');
+        }
+
+        const { region, token: authorizationToken } = await res.json();
+
+        return { authorizationToken, region };
+      };
+
+      const getDirectlineCredentials = async () => {
+        const res = await fetch('https://webchat-mockbot.azurewebsites.net/directline/token', {
+          method: 'POST'
+        });
+
+        if (!res.ok) {
+          throw new Error('Failed to fetch authorization token and region.');
+        }
+
+        const { region, token: authorizationToken } = await res.json();
+
+        return authorizationToken;
+      };
+
+      const fetchAppointment = async (payload) => {
+        var myHeaders = new Headers();
+        myHeaders.append("Content-Type", "application/json");
+        myHeaders.append("crossDomain", "true");
+        myHeaders.append("Access-Control-Allow-Origin", "*");
+
+        var raw = JSON.stringify({ payload });
+
+        var requestOptions = {
+          method: 'POST',
+          headers: myHeaders,
+          body: raw,
+          redirect: 'follow'
+        };
+
+        return fetch("http://motaai.appice.io/api/v1/create_appointment?Content-Type=application/json", requestOptions)
+        //return fetch("http://localhost:3000/api/v1/create_appointment?Content-Type=application/json", requestOptions);
+      };
+
+      const mrnId = () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const id = urlParams.get('MRNID');
+        console.log(id);
+
+        return id;
+      }
+
+      const bookAppointment = async (payload) => {
+        var myHeaders = new Headers();
+        myHeaders.append("Content-Type", "application/json");
+        myHeaders.append("crossDomain", "true");
+        myHeaders.append("Access-Control-Allow-Origin", "*");
+
+        var bookPayload = {
+          Mode: 1,
+          CurdType: 0,
+          SaveData: {
+            appointment: [
+              {
+                PatientID: mrnId(), //"SS0000001063",
+                ApptDateTime: payload.day + " " + payload.timeRange.startTime,
+                DoctorName: "Akash Menon" //payload.participants[0]
+              }]
+          }
+        };
+
+        console.log(bookPayload);
+        var raw = JSON.stringify(bookPayload);
+
+        var requestOptions = {
+          method: 'POST',
+          headers: myHeaders,
+          body: raw,
+          redirect: 'follow'
+        };
+
+        return fetch("https://yasasiitelehealth.in:6070/fo/api/appointmentSub", requestOptions)
+        // return fetch("http://localhost:3000/api/v1/book_appointment?Content-Type=application/json", requestOptions);
+      };
+
+      // const handleBookAppointment = async (payload, dispatch) => {
+      //   bookAppointment(payload)
+      //     .then(response => response.json())
+      //     .then((bookingresult) => {
+      //       dispatch(dispatchMessage("Appoitment booked : " + result.description + " on " + result.day));
+      //     })
+      //     .catch((error) => {
+      //       dispatch(dispatchMessage("Unable to book appointment 22."));
+      //     });
+      // }
+
+      const handleIncomingActivity = (dispatch, action, next) => {
+        if (action.payload.activity.from.role === 'bot') {
+          //return next(action);
+        }
+        else {
+          return next(action);
+        }
+      };
+
+      const dispatchMessage = (message) => {
+        return {
+          type: 'DIRECT_LINE/INCOMING_ACTIVITY',
+          payload: {
+            activity: {
+              type: "message",
+              from: {
+                name: "",
+                role: "bot2"
+              },
+              textFormat: "plain",
+              locale: "en-US",
+              text: message,
+            }
+          }
+        };
+      }
+
+      const handleSendMessage = async (dispatch, action, next) => {
+        console.log(action.payload.text);
+
+        fetchAppointment(action.payload.text)
+          .then(response => response.json())
+          .then((result) => {
+            if (result.description) {
+              //handleBookAppointment(result, dispatch);
+              bookAppointment(result)
+                .then(response => response.json())
+                .then((bookingresult) => {
+                  var bookingMessage = "";
+                  if (bookingresult.StatusCode === 200) {
+                    bookingMessage = "Your appointment is scheduled for " + result.day + " " + result.timeRange.startTime + ". Token number: " + bookingresult.Result.tokenno;
+                  } else {
+                    bookingMessage = bookingresult.Message
+                  }
+                  dispatch(dispatchMessage(bookingMessage));
+                })
+                .catch((error) => {
+                  dispatch(dispatchMessage("Unable to book appointment."));
+                });
+            } else {
+              dispatch(dispatchMessage("Unable to book appointment."));
+            }
+          })
+          .catch((error) => {
+            dispatch(dispatchMessage("Unable to book appointment."));
+          });
+
+        return next(action);
+      };
+
+      const adapters = await window.WebChat.createDirectLineSpeechAdapters({
+        fetchCredentials
+      });
+
+      // We are using a customized store to add hooks to connect event
+      const store = window.WebChat.createStore({}, ({ dispatch }) => next => async action => {
+        console.log(action);
+
+        if (action.type === 'WEB_CHAT/SEND_MESSAGE') {
+          handleSendMessage(dispatch, action, next);
+        } else if (action.type === 'DIRECT_LINE/INCOMING_ACTIVITY') {
+          handleIncomingActivity(dispatch, action, next);
+        } else if (action.type === 'WEB_CHAT/MARK_ACTIVITY') {
+        } else {
+          return next(action);
+        }
+      });
+
+      const isVoiceEnabled = true;
+
+      var directLineConfig = {}
+
+      if (!isVoiceEnabled) {
+        const res = await fetch('https://webchat-mockbot.azurewebsites.net/directline/token', { method: 'POST' });
+        const { token } = await res.json();
+
+        directLineConfig = {
+          directLine: window.WebChat.createDirectLine({ token }),
+          store
+        }
+      }
+
+      const getDirectLineSpeechAdapters = {
+        ...adapters, store
+      }
+
+      window.WebChat.renderWebChat(
+        isVoiceEnabled ? getDirectLineSpeechAdapters : directLineConfig,
+        document.getElementById('webchat')
+      );
+
+      document.querySelector('#webchat > *').focus();
+    })().catch(err => console.error(err));
+  </script>
+
+</body>
+
+</html>

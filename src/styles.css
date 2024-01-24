@@ -1,0 +1,4 @@
+/* You can add global styles to this file, and also import other style files */
+#webchat {
+    height: 98vh; /* vh stands for view-port height, and 1vh is 1% of screen height */
+}
