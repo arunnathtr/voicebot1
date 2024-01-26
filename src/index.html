@@ -23,22 +23,33 @@
   </style>
 </head>
 
+
 <body>
   <div id="webchat" role="main"></div>
   <script>
     (async function () {
       const fetchCredentials = async () => {
-        const res = await fetch('https://webchat-mockbot-streaming.azurewebsites.net/speechservices/token', {
-          method: 'POST'
-        });
+        // const res = await fetch('https://webchat-mockbot-streaming.azurewebsites.net/speechservices/token', {
+        //   method: 'POST'
+        // });
 
-        if (!res.ok) {
-          throw new Error('Failed to fetch authorization token and region.');
-        }
+        // if (!res.ok) {
+        //   throw new Error('Failed to fetch authorization token and region.');
+        // }
 
-        const { region, token: authorizationToken } = await res.json();
 
-        return { authorizationToken, region };
+        // const { region, token: authorizationToken } = await res.json();
+        // console.log(region ,authorizationToken );
+
+        // return { authorizationToken, region };
+
+        const tokens = {
+          region: "westus2",
+          authorizationToken: "eyJhbGciOiJFUzI1NiIsImtpZCI6ImtleTEiLCJ0eXAiOiJKV1QifQ.eyJyZWdpb24iOiJ3ZXN0dXMyIiwic3Vic2NyaXB0aW9uLWlkIjoiMzcwZTc5OTI0MTY2NDk4ZmJlMDE4NGIxZmEzMTQ4NzAiLCJwcm9kdWN0LWlkIjoiU3BlZWNoU2VydmljZXMuUzAiLCJjb2duaXRpdmUtc2VydmljZXMtZW5kcG9pbnQiOiJodHRwczovL2FwaS5jb2duaXRpdmUubWljcm9zb2Z0LmNvbS9pbnRlcm5hbC92MS4wLyIsImF6dXJlLXJlc291cmNlLWlkIjoiL3N1YnNjcmlwdGlvbnMvYTA2M2Y0ZmYtMzIyMC00OTc3LThhYWYtYzk2ODJlOTg2OWEzL3Jlc291cmNlR3JvdXBzL2hhd28td2ViY2hhdC1tb2NrYm90LXJnL3Byb3ZpZGVycy9NaWNyb3NvZnQuQ29nbml0aXZlU2VydmljZXMvYWNjb3VudHMvd2ViY2hhdC1tb2NrYm90LXN0cmVhbWluZyIsInNjb3BlIjoic3BlZWNoc2VydmljZXMiLCJhdWQiOiJ1cm46bXMuc3BlZWNoc2VydmljZXMud2VzdHVzMiIsImV4cCI6MTcwNjI2MjYxOCwiaXNzIjoidXJuOm1zLmNvZ25pdGl2ZXNlcnZpY2VzIn0.vQmR1JiQypLdTXeuoSyNGTRe37j9yN5c3TYIVO0iH-015hlWtuUHmal_KfWC6gi6IG3uUHGzFNbkcsEdKUGExQ"
+        };
+
+        return tokens;
+
       };
 
       const getDirectlineCredentials = async () => {
@@ -96,7 +107,7 @@
               {
                 PatientID: mrnId(), //"SS0000001063",
                 ApptDateTime: payload.day + " " + payload.timeRange.startTime,
-                DoctorName: "Akash Menon" //payload.participants[0]
+                DoctorName: payload.participants[0]
               }]
           }
         };
@@ -209,8 +220,10 @@
       var directLineConfig = {}
 
       if (!isVoiceEnabled) {
-        const res = await fetch('https://webchat-mockbot.azurewebsites.net/directline/token', { method: 'POST' });
-        const { token } = await res.json();
+        //const res = await fetch('https://webchat-mockbot.azurewebsites.net/directline/token', { method: 'POST' });
+        //const { token } = await res.json();
+
+        var token = "ZZ8cJarLNGQ.ho8Mwj_KqGBpTQ206knj_UqmG-iBbyjMSD_SqK-YzIg";
 
         directLineConfig = {
           directLine: window.WebChat.createDirectLine({ token }),
@@ -222,10 +235,31 @@
         ...adapters, store
       }
 
+      // window.WebChat.renderWebChat(
+      //   isVoiceEnabled ? getDirectLineSpeechAdapters : directLineConfig,
+      //   document.getElementById('webchat')
+      // );
+
+
+      const { createCognitiveServicesSpeechServicesPonyfillFactory, createDirectLine, renderWebChat } = window.WebChat;
+
       window.WebChat.renderWebChat(
-        isVoiceEnabled ? getDirectLineSpeechAdapters : directLineConfig,
+        {
+          directLine: createDirectLine({
+            secret: 'ZZ8cJarLNGQ.ho8Mwj_KqGBpTQ206knj_UqmG-iBbyjMSD_SqK-YzIg'
+          }),
+          locale: 'en-US',
+          webSpeechPonyfillFactory: await createCognitiveServicesSpeechServicesPonyfillFactory({
+            credentials: {
+              subscriptionKey: '53119857a44940b3b194be64d6a8307a',
+              region: "eastus"
+            },
+          }),
+          store: store
+        },
         document.getElementById('webchat')
       );
+
 
       document.querySelector('#webchat > *').focus();
     })().catch(err => console.error(err));
