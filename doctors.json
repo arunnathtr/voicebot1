@@ -1,0 +1,16 @@
+{
+  "doctors": [
+    {
+      "name": "Dr. Rajesh Kumar",
+      "department": "Cardiology"
+    },
+    {
+      "name": "Dr. Anita Sharma",
+      "department": "Dermatology"
+    },
+    {
+      "name": "Dr. Ramesh Singh",
+      "department": "Neurology"
+    }
+  ]
+}
