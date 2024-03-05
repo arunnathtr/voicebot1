@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "59310223160",
+    "project_id": "samplepush-fcaa0",
+    "storage_bucket": "samplepush-fcaa0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:59310223160:android:f74e75d54200e3d003dbcd",
+        "android_client_info": {
+          "package_name": "com.KI.Yasasii.Patient.App.Demo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3YQ4Ha9jOj42zVr0XissfxzbAs35HBls"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
