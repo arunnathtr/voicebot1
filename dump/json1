@@ -1,0 +1,50 @@
+[
+    {
+        "pattemplatefieldid": 16104,
+        "value": "Symptomatic treatment advised: Paracetamol for fever, gargles with listerine, steam inhalation recommended.\n- Suggested home remedies include hot water with ginger, cinnamon, and green tea. Advised to avoid cold drinks.\n- Follow-up in 2-3 days to monitor symptoms. If cough worsens or sputum turns green, antibiotics may be considered, keeping in mind patient's allergy to penicillin.\n- Advised rest, stress avoidance, and minimal contact/travel.",
+        "field": "HTF1014917",
+        "templatemainheadingid": "TMH4184",
+        "providerid": null,
+        "providervisitid": null
+    },
+    {
+        "pattemplatefieldid": 16103,
+        "value": "Suspected upper respiratory tract infection, likely viral but could be bacterial. Sinus involvement indicated by pain on cheek pressure and muffled hearing.",
+        "field": "HTF1014915",
+        "templatemainheadingid": "TMH4184",
+        "providerid": null,
+        "providervisitid": null
+    },
+    {
+        "pattemplatefieldid": 16102,
+        "value": "Suggested a COVID test to rule out COVID-19 infection.",
+        "field": "HTF1014913",
+        "templatemainheadingid": "TMH4184",
+        "providerid": null,
+        "providervisitid": null
+    },
+    {
+        "pattemplatefieldid": 16101,
+        "value": "No medication taken so far. Patient attempted steam inhalation without much commitment.",
+        "field": "HTF1014911",
+        "templatemainheadingid": "TMH4184",
+        "providerid": null,
+        "providervisitid": null
+    },
+    {
+        "pattemplatefieldid": 16100,
+        "value": "Patient has a medicinal allergy (specifics not provided), no history of diabetes or hypertension, unlike his parents. Patient is a constant smoker, consuming one pack a day. Recently returned from travel in Oman.",
+        "field": "HTF1014909",
+        "templatemainheadingid": "TMH4184",
+        "providerid": null,
+        "providervisitid": null
+    },
+    {
+        "pattemplatefieldid": 16099,
+        "value": "Patient reports nasal congestion, cough, sore throat, feverish feeling, one-sided headache, and loss of smell over the past two days. Symptoms had a gradual onset, starting with an itchy throat.",
+        "field": "HTF1014906",
+        "templatemainheadingid": "TMH4184",
+        "providerid": null,
+        "providervisitid": null
+    }
+]
