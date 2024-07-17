@@ -1,0 +1,1079 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<bom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" serialNumber="urn:uuid:c8358102-9135-46ca-b315-9630bc33f2dc" version="1" xmlns="http://cyclonedx.org/schema/bom/1.5">
+  <metadata>
+    <timestamp>2024-06-13T10:40:50.5394413Z</timestamp>
+    <tools>
+      <tool>
+        <vendor>CycloneDX</vendor>
+        <name>CycloneDX module for .NET</name>
+        <version>3.0.8.0</version>
+      </tool>
+    </tools>
+    <component type="application" bom-ref="E:\KOMI WEB@0.0.0">
+      <name>E:\KOMI WEB</name>
+      <version>0.0.0</version>
+    </component>
+  </metadata>
+  <components>
+    <component type="library" bom-ref="pkg:nuget/BouncyCastle@1.8.9">
+      <author>Bouncy Castle Project Contributors</author>
+      <name>BouncyCastle</name>
+      <version>1.8.9</version>
+      <description>Bouncy Castle is a collection of APIs used in cryptography.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">A89C26042452FD54706899776C8347E76022ACB0B70A365744F05139E7CDE3FD5AE2A9BF41CB85E45863BA9B0760536535C12D6E1154B4A92617C8DF16658CAC</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>Unknown - See URL</name>
+          <url>http://www.bouncycastle.org/licence.html</url>
+        </license>
+      </licenses>
+      <copyright>Legion of the Bouncy Castle Inc.</copyright>
+      <purl>pkg:nuget/BouncyCastle@1.8.9</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://www.bouncycastle.org/csharp/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/DotNetZip@1.13.3">
+      <author>Henrik/Dino Chiesa</author>
+      <name>DotNetZip</name>
+      <version>1.13.3</version>
+      <description>A library for dealing with zip, bzip and zlib from .Net</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">3A504CF0DA92541DC0AF475F39FDA24885D5ACB39D23E16A20444B6FAED40AD2D13F09281BE693CD30308A299BE059272B1C74FBE46955299ACDA64734DCFDB1</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>Unknown - See URL</name>
+          <url>https://raw.githubusercontent.com/haf/DotNetZip.Semverd/master/LICENSE</url>
+        </license>
+      </licenses>
+      <copyright>Dino Chiesa</copyright>
+      <purl>pkg:nuget/DotNetZip@1.13.3</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/haf/DotNetZip.Semverd</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/EntityFramework@6.1.0">
+      <author>Microsoft</author>
+      <name>EntityFramework</name>
+      <version>6.1.0</version>
+      <description>Entity Framework is Microsoft's recommended data access technology for new applications.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">05698E786FB709B7F46698ADE36836B698897B4EDBA337AD6E1BE2A4AFED9E43DCE2B7B73B9EAE38429A87B624C896BC67B751C6E4BB6E70DFDE62CE915E4412</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>Unknown - See URL</name>
+          <url>http://go.microsoft.com/fwlink/?LinkID=320539</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/EntityFramework@6.1.0</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://go.microsoft.com/fwlink/?LinkID=320540</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Jace@0.8.7">
+      <author>Pieter De Rycke</author>
+      <name>Jace</name>
+      <version>0.8.7</version>
+      <description>Jace.NET is a high performance calculation engine for the .NET platform that can dynamically parse, interprete and execute strings containing mathematical functions. Jace.NET is available for the various .NET flavors: .NET, WinRT, Windows Phone 7, Windows Phone 8 and Xamarin.Android.
+		
+		Jace can execute functions in two modes: in interpreted mode and in a dynamic compilation mode. If dynamic compilation mode is used, Jace will create a dynamic method at runtime and will generate the necessary MSIL opcodes for native execution of the function. If a function is re-executed with other variables, Jace will take the dynamically generated method from its cache. It is recommended to use Jace in dynamic compilation mode.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">BBE22BB54427FF11B19B35A1A491C70B0C9303DFF62F9729AF3066B31DC2239C522A448EB7065DEA097EDD268E8EB0E34C3918E4415FA2A0D2B4E482511D5B77</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>Unknown - See URL</name>
+          <url>https://github.com/pieterderycke/Jace/blob/master/LICENSE.md</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/Jace@0.8.7</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/pieterderycke/Jace</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Microsoft.AspNet.Cors@5.2.4">
+      <author>Microsoft</author>
+      <name>Microsoft.AspNet.Cors</name>
+      <version>5.2.4</version>
+      <description>This package contains the core components to enable Cross-Origin Resource Sharing (CORS) in ASP.NET.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">09059F39CE911859CDB069352779F3DA457B96735D658C8C2E4F1F894838B65EE138FBEAD52BBEEBE600E2A3088704673FCF2A0CF2D280A4030C366380C22ED9</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>Unknown - See URL</name>
+          <url>http://www.microsoft.com/web/webpi/eula/net_library_eula_ENU.htm</url>
+        </license>
+      </licenses>
+      <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+      <purl>pkg:nuget/Microsoft.AspNet.Cors@5.2.4</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://www.asp.net/web-api</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Microsoft.AspNet.Identity.Core@2.2.1">
+      <author>Microsoft</author>
+      <name>Microsoft.AspNet.Identity.Core</name>
+      <version>2.2.1</version>
+      <description>Core interfaces for ASP.NET Identity.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">8D3F9A5AB210C99967991A0165E03FD317A7076F694B3945FD981F7E8AFEDCD93A66AA9D928FA967132E815E1D2799F5A41A7596BF71E3F17B269840DBD0AD00</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>Unknown - See URL</name>
+          <url>http://www.microsoft.com/web/webpi/eula/net_library_eula_ENU.htm</url>
+        </license>
+      </licenses>
+      <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+      <purl>pkg:nuget/Microsoft.AspNet.Identity.Core@2.2.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Microsoft.AspNet.Identity.EntityFramework@2.2.1">
+      <author>Microsoft</author>
+      <name>Microsoft.AspNet.Identity.EntityFramework</name>
+      <version>2.2.1</version>
+      <description>ASP.NET Identity providers that use Entity Framework.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">BFC11D76DB0E64B8AB951F6D6E2378537BB1090B9F26A2C7378687991BC3679C3640FF76215A03E9847BD0825F58011D6A90FC386D36544A375E4876EE640E90</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>Unknown - See URL</name>
+          <url>http://www.microsoft.com/web/webpi/eula/net_library_eula_ENU.htm</url>
+        </license>
+      </licenses>
+      <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+      <purl>pkg:nuget/Microsoft.AspNet.Identity.EntityFramework@2.2.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Microsoft.AspNet.Identity.Owin@2.2.1">
+      <author>Microsoft</author>
+      <name>Microsoft.AspNet.Identity.Owin</name>
+      <version>2.2.1</version>
+      <description>Owin implementation for ASP.NET Identity.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">4C5B21D46F5F53D9328CCC020F749477D2195140899F8589518504F8C5A9AFD55489CED80BF4911B14229FFBCC152AD94B6C1672BF522EE22BAC5F0B94A519FD</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>Unknown - See URL</name>
+          <url>http://www.microsoft.com/web/webpi/eula/net_library_eula_ENU.htm</url>
+        </license>
+      </licenses>
+      <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+      <purl>pkg:nuget/Microsoft.AspNet.Identity.Owin@2.2.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Microsoft.AspNet.WebApi@5.2.3">
+      <author>Microsoft</author>
+      <name>Microsoft.AspNet.WebApi</name>
+      <version>5.2.3</version>
+      <description>This package contains everything you need to host ASP.NET Web API on IIS.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">9AEB7A6D87F88A657E390AD93421535D1AE5B2C6F9DE8E65A2B2B7232E8C58B5B70C9562BE2D19898E0FDA1E151E140E49FD18D66E36596F9444BCFD42E3F710</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>Unknown - See URL</name>
+          <url>http://www.microsoft.com/web/webpi/eula/net_library_eula_ENU.htm</url>
+        </license>
+      </licenses>
+      <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+      <purl>pkg:nuget/Microsoft.AspNet.WebApi@5.2.3</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://www.asp.net/web-api</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Microsoft.AspNet.WebApi.Client@5.2.4">
+      <author>Microsoft</author>
+      <name>Microsoft.AspNet.WebApi.Client</name>
+      <version>5.2.4</version>
+      <description>This package adds support for formatting and content negotiation to System.Net.Http.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">52122AE0C1CCC6B6F1BADCF34D295F992709FA9851190952A0F033B0A843A8C4C7CC9D06BB14C696995A707884493E96D2B75C0F566AAF1DA78D7C90421FB1BA</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>Unknown - See URL</name>
+          <url>http://www.microsoft.com/web/webpi/eula/net_library_eula_ENU.htm</url>
+        </license>
+      </licenses>
+      <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+      <purl>pkg:nuget/Microsoft.AspNet.WebApi.Client@5.2.4</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://www.asp.net/web-api</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Microsoft.AspNet.WebApi.Core@5.2.4">
+      <author>Microsoft</author>
+      <name>Microsoft.AspNet.WebApi.Core</name>
+      <version>5.2.4</version>
+      <description>This package contains the core runtime assemblies for ASP.NET Web API.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">47D3AA92130452DB4D01BE2A1C94492CAEBE91CBFEB7F3D6D8BC2E88B15D2DD745EA9976C08F565A4A130C5D189FB97770CB75AD90177B2D51CA4EAE49468E27</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>Unknown - See URL</name>
+          <url>http://www.microsoft.com/web/webpi/eula/net_library_eula_ENU.htm</url>
+        </license>
+      </licenses>
+      <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+      <purl>pkg:nuget/Microsoft.AspNet.WebApi.Core@5.2.4</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://www.asp.net/web-api</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Microsoft.AspNet.WebApi.Cors@5.2.4">
+      <author>Microsoft</author>
+      <name>Microsoft.AspNet.WebApi.Cors</name>
+      <version>5.2.4</version>
+      <description>This package contains the components to enable Cross-Origin Resource Sharing (CORS) in ASP.NET Web API.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">0512EA8372D75EEFA1A1016410E6FD7D21DC75444145B040502DCBAD6D4B8B797911B74FC18C90B10DD6B27A55C9C8C493084C5AA5B38EEDE1B7B2B1855CE5CE</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>Unknown - See URL</name>
+          <url>http://www.microsoft.com/web/webpi/eula/net_library_eula_ENU.htm</url>
+        </license>
+      </licenses>
+      <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+      <purl>pkg:nuget/Microsoft.AspNet.WebApi.Cors@5.2.4</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://www.asp.net/web-api</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Microsoft.AspNet.WebApi.Extensions.Compression.Server@2.0.1">
+      <author>Ove Andersen</author>
+      <name>Microsoft.AspNet.WebApi.Extensions.Compression.Server</name>
+      <version>2.0.1</version>
+      <description>Module for ASP.NET Web API that enables GZip and Deflate support for incoming and outgoing requests. Please note that this is not an official Microsoft package.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">46C397EE2D4061CFA6FC79B84D9C2BBFA2C61D76F7B9E3A2436537C3945C657A15862CE754FAB5BF19CFC8081385D52E5252010CAA94E64FB4AEDE939AF704D2</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>Unknown - See URL</name>
+          <url>http://www.eyecatch.no/licenses/apache-20/</url>
+        </license>
+      </licenses>
+      <copyright>Copyright EyeCatch 2016</copyright>
+      <purl>pkg:nuget/Microsoft.AspNet.WebApi.Extensions.Compression.Server@2.0.1</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/azzlack/Microsoft.AspNet.WebApi.MessageHandlers.Compression</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Microsoft.AspNet.WebApi.MessageHandlers.Compression@2.0.0">
+      <author>Ove Andersen</author>
+      <name>Microsoft.AspNet.WebApi.MessageHandlers.Compression</name>
+      <version>2.0.0</version>
+      <description>NOTE!!! This is an obsolete package, it only installs the Microsoft.AspNet.WebApi.Extensions.Compression.Server and System.Net.Http.Extensions.Compression.Client packages.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">19CE7DE3743305FDBE5C7E1E0855A84C9F6FA7977D8EE4164A9F6D22BB34FBE28808340F19D4ECE3594ACCD718651D6008DEA1A71E3AAA51FB15C6DBD23AED43</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>Unknown - See URL</name>
+          <url>http://www.eyecatch.no/licenses/apache-20/</url>
+        </license>
+      </licenses>
+      <copyright>Copyright EyeCatch 2016</copyright>
+      <purl>pkg:nuget/Microsoft.AspNet.WebApi.MessageHandlers.Compression@2.0.0</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/azzlack/Microsoft.AspNet.WebApi.MessageHandlers.Compression</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Microsoft.AspNet.WebApi.Owin@5.2.4">
+      <author>Microsoft</author>
+      <name>Microsoft.AspNet.WebApi.Owin</name>
+      <version>5.2.4</version>
+      <description>This package allows you to host ASP.NET Web API within an OWIN server and provides access to additional OWIN features.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">3F63FED68DFED780D9844FA57B9266691B56550696308926D480F4C29CE1AEFD163CE73F2A34585560F84FC9DA51FD98BB7BE0F921C59F14FC3EC09D11ACC415</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>Unknown - See URL</name>
+          <url>http://www.microsoft.com/web/webpi/eula/net_library_eula_ENU.htm</url>
+        </license>
+      </licenses>
+      <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+      <purl>pkg:nuget/Microsoft.AspNet.WebApi.Owin@5.2.4</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://www.asp.net/web-api</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Microsoft.AspNet.WebApi.WebHost@5.2.3">
+      <author>Microsoft</author>
+      <name>Microsoft.AspNet.WebApi.WebHost</name>
+      <version>5.2.3</version>
+      <description>This package contains everything you need to host ASP.NET Web API on IIS.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">277A5DBD1CA76E27748EF765FB0636A1BBA9A657952E2412E891DAE495E69030283638C511EB396C065736CCAD18CB06C34CF427E454360C79CED0AE4700CA38</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>Unknown - See URL</name>
+          <url>http://www.microsoft.com/web/webpi/eula/net_library_eula_ENU.htm</url>
+        </license>
+      </licenses>
+      <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+      <purl>pkg:nuget/Microsoft.AspNet.WebApi.WebHost@5.2.3</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://www.asp.net/web-api</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Microsoft.Bcl@1.1.10">
+      <author>Microsoft</author>
+      <name>Microsoft.Bcl</name>
+      <version>1.1.10</version>
+      <description>Adds support for types added in later versions of .NET when targeting previous versions.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">35EED2D5F92968A7F4509029020A593A162E9EF8735C45AC7A2B8D366313B5A1BB6C650BB00BCC09236383D74A5F0861786E684DA4C34E87A4A240243AB5B8E1</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>Unknown - See URL</name>
+          <url>http://go.microsoft.com/fwlink/?LinkId=329770</url>
+        </license>
+      </licenses>
+      <copyright>Copyright © Microsoft Corporation</copyright>
+      <purl>pkg:nuget/Microsoft.Bcl@1.1.10</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://go.microsoft.com/fwlink/?LinkID=280057</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Microsoft.Bcl.Build@1.0.14">
+      <author>Microsoft</author>
+      <name>Microsoft.Bcl.Build</name>
+      <version>1.0.14</version>
+      <description>Provides build infrastructure components for Microsoft packages.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">4D5162D249693DCBEAB4FF7C78E63AD542CF070DC015CC2B9EE30001D9216D8B9B32441AFD31CF2564985E80D263FEEE876A140C29F8D4D77EDC4A543736D9A5</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>Unknown - See URL</name>
+          <url>http://go.microsoft.com/fwlink/?LinkId=329770</url>
+        </license>
+      </licenses>
+      <copyright>Copyright © Microsoft Corporation</copyright>
+      <purl>pkg:nuget/Microsoft.Bcl.Build@1.0.14</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://go.microsoft.com/fwlink/?LinkID=296436</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Microsoft.Bcl.Compression@3.9.85">
+      <author>Microsoft</author>
+      <name>Microsoft.Bcl.Compression</name>
+      <version>3.9.85</version>
+      <description>This package contains APIs for compressing and de-compressing streams using the ZIP and GZIP formats.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">53493A356A7AB7CEEC0A26FA8F33D52FCD0B1A6B4D1353461122708F5B182D4EDD8DBB58880FAD77C2C4561B2A6CE404C93C2A8A9E73754AB7D9A84E156874A4</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>Unknown - See URL</name>
+          <url>http://go.microsoft.com/fwlink/?LinkId=329770</url>
+        </license>
+      </licenses>
+      <copyright>Copyright © Microsoft Corporation</copyright>
+      <purl>pkg:nuget/Microsoft.Bcl.Compression@3.9.85</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://go.microsoft.com/fwlink/?LinkID=282261</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Microsoft.CodeDom.Providers.DotNetCompilerPlatform@1.0.0">
+      <author>Microsoft</author>
+      <name>Microsoft.CodeDom.Providers.DotNetCompilerPlatform</name>
+      <version>1.0.0</version>
+      <description>Replacement CodeDOM providers that use the new .NET Compiler Platform ("Roslyn") compiler as a service APIs.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">2A7F2E032F1C4FD8A4A1138CF1D2FB2B3CEFB2AB319817757D969BB9906C26B38A115F751653428D206D6468146E045577B33EAF4ADA09AC0330B900E0E2550D</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>Unknown - See URL</name>
+          <url>http://www.microsoft.com/web/webpi/eula/net_library_eula_ENU.htm</url>
+        </license>
+      </licenses>
+      <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+      <purl>pkg:nuget/Microsoft.CodeDom.Providers.DotNetCompilerPlatform@1.0.0</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://www.asp.net/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Microsoft.IdentityModel.JsonWebTokens@6.9.0">
+      <author>Microsoft</author>
+      <name>Microsoft.IdentityModel.JsonWebTokens</name>
+      <version>6.9.0</version>
+      <description>Includes types that provide support for creating, serializing and validating JSON Web Tokens.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">E8D5FE74FD42D0D9E51DAEDFC6FD64544CD5C7ED1747BFAEED9689F4663D6D37014EE547F33AA0725C433F9E1F2C8379785429186C1E2BEB2B55413744EC40EB</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+        </license>
+      </licenses>
+      <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+      <purl>pkg:nuget/Microsoft.IdentityModel.JsonWebTokens@6.9.0</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Microsoft.IdentityModel.Logging@6.9.0">
+      <author>Microsoft</author>
+      <name>Microsoft.IdentityModel.Logging</name>
+      <version>6.9.0</version>
+      <description>Includes Event Source based logging support.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">473E1573A163333BFCCE7AC950FEC2B8EF3071E1ACCD5E40ECF767B968C200FC855229BF5242BADE2CAC4D186B4EA52C56F06C7D1DF7D1974BBD374FE97D1D8D</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+        </license>
+      </licenses>
+      <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+      <purl>pkg:nuget/Microsoft.IdentityModel.Logging@6.9.0</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Microsoft.IdentityModel.Tokens@6.9.0">
+      <author>Microsoft</author>
+      <name>Microsoft.IdentityModel.Tokens</name>
+      <version>6.9.0</version>
+      <description>Includes types that provide support for SecurityTokens, Cryptographic operations: Signing, Verifying Signatures, Encryption.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">19A2478E3681C50021B7B406A9CF3B41E06CC466FCF4EA2CAC86196D2FC72095DD5D0FDBAFB5A580949ECDF4523126E28EB8BE1AE89B623B0409B51078E4D36A</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+        </license>
+      </licenses>
+      <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+      <purl>pkg:nuget/Microsoft.IdentityModel.Tokens@6.9.0</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Microsoft.Net.Compilers@1.0.0">
+      <author>Microsoft</author>
+      <name>Microsoft.Net.Compilers</name>
+      <version>1.0.0</version>
+      <description>.Net Compilers package. Referencing this package will cause the project to be built using the specific version of the C# and Visual Basic compilers contained in the package, as opposed to any system installed version.
+
+Supported Platforms:
+- .NET Framework 4.5</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">4454A075A23B87223014738A768C40A4416A825EB370BE309DF8586299F7E3F3290F60FE0691BB1CB3CAF862525818DF6C3FBEC5D256CFB6A9D01AD3C3A2598A</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>Unknown - See URL</name>
+          <url>http://go.microsoft.com/fwlink/?LinkId=529444</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/Microsoft.Net.Compilers@1.0.0</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://msdn.com/roslyn</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Microsoft.Net.Http@2.2.29">
+      <author>Microsoft</author>
+      <name>Microsoft.Net.Http</name>
+      <version>2.2.29</version>
+      <description>This package provides a programming interface for modern HTTP/REST based applications.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">BFC9D4752BF769C547E7143B7582878DD3D7451B69016F180961DAECCD6B03085F9CA839B52A29DB5B29B0C784C5C12AC2613CEA9813F6B1024E039B5A580E3A</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>Unknown - See URL</name>
+          <url>http://go.microsoft.com/fwlink/?LinkId=329770</url>
+        </license>
+      </licenses>
+      <copyright>Copyright © Microsoft Corporation</copyright>
+      <purl>pkg:nuget/Microsoft.Net.Http@2.2.29</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://go.microsoft.com/fwlink/?LinkID=280055</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Microsoft.Owin@4.0.0">
+      <author>Microsoft</author>
+      <name>Microsoft.Owin</name>
+      <version>4.0.0</version>
+      <description>Provides a set of helper types and abstractions for simplifying the creation of OWIN components.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">4B598E9C9DEB9DB69B9DA9CDA2E01306C6B4CBFC10B6F5088F0EC6FA39F32A541614CA14D319818B60060DA85393D0B6ED4D04342EC704A1C745E0897255384B</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>Unknown - See URL</name>
+          <url>https://www.microsoft.com/en-us/web/webpi/eula/net_library_eula_ENU.htm</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/Microsoft.Owin@4.0.0</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/aspnet/AspNetKatana/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Microsoft.Owin@4.1.1">
+      <author>Microsoft</author>
+      <name>Microsoft.Owin</name>
+      <version>4.1.1</version>
+      <description>Provides a set of helper types and abstractions for simplifying the creation of OWIN components.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">5102255EA09165113E1019FF44410982084058E82030833BF67D344C9B54B6F843E8F084B37278C95DD0EFC600502809234CA4353BA1F56BE3C861E339E080FC</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+      <purl>pkg:nuget/Microsoft.Owin@4.1.1</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/aspnet/AspNetKatana/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Microsoft.Owin.Cors@4.0.0">
+      <author>Microsoft</author>
+      <name>Microsoft.Owin.Cors</name>
+      <version>4.0.0</version>
+      <description>This package contains the components to enable Cross-Origin Resource Sharing (CORS) in OWIN middleware.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">DD72B9BFB6BC3048160268AC71F38B927A3F3A4BEF74F5E48277102C9C72B5FC6CDD9B3F6A19C2E48C8E1F078EA42E72402A1E69BE6D2803FD2272D477168BE7</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>Unknown - See URL</name>
+          <url>https://www.microsoft.com/en-us/web/webpi/eula/net_library_eula_ENU.htm</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/Microsoft.Owin.Cors@4.0.0</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/aspnet/AspNetKatana/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Microsoft.Owin.Host.SystemWeb@4.0.0">
+      <author>Microsoft</author>
+      <name>Microsoft.Owin.Host.SystemWeb</name>
+      <version>4.0.0</version>
+      <description>OWIN server that enables OWIN-based applications to run on IIS using the ASP.NET request pipeline.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">D7876D4FBEEFA081D916A0F786BB991BFC0A4F3088D961BBF44AF2170CABCE29E065233F8AD4DC354ED1AAB206F71763E90B9D18C53815CDFC312DA078A1CB26</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>Unknown - See URL</name>
+          <url>https://www.microsoft.com/en-us/web/webpi/eula/net_library_eula_ENU.htm</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/Microsoft.Owin.Host.SystemWeb@4.0.0</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/aspnet/AspNetKatana/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Microsoft.Owin.Security@2.1.0">
+      <author>Microsoft</author>
+      <name>Microsoft.Owin.Security</name>
+      <version>2.1.0</version>
+      <description>Common types which are shared by the various authentication middleware components.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">5FDA495CF1DA3833C12CE3CA3A8B04AA40A8C96F4D74E599E3640BECE74055D4A911773BC247BDD4946CA25459DB62F61BCAFD0AD25D8470AA1D6141D28BF3D5</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>Unknown - See URL</name>
+          <url>http://www.microsoft.com/web/webpi/eula/aspnetcomponent_rtw_enu.htm</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/Microsoft.Owin.Security@2.1.0</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://katanaproject.codeplex.com/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Microsoft.Owin.Security@4.1.1">
+      <author>Microsoft</author>
+      <name>Microsoft.Owin.Security</name>
+      <version>4.1.1</version>
+      <description>Common types which are shared by the various authentication middleware components.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">0410B0BDA872FA940AE84268DBAAE1B0AB5C677802BA77DE97BEEC4584ED7AA86976F18073E99E6D3C01015D428E57E3195E4C3BFB7496449A3C736D4BC5B744</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+      <purl>pkg:nuget/Microsoft.Owin.Security@4.1.1</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/aspnet/AspNetKatana/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Microsoft.Owin.Security.Cookies@2.1.0">
+      <author>Microsoft</author>
+      <name>Microsoft.Owin.Security.Cookies</name>
+      <version>2.1.0</version>
+      <description>Middleware that enables an application to use cookie based authentication, similar to ASP.NET's forms authentication.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">33D0315CFC876BF43F03943B7F91FA55DE57787D980E5707BE4771B6E549DB0ADC20800CD4B3B532B442C23027F9B92396CAA70F238D6BA3DCBB68A7838D6ECA</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>Unknown - See URL</name>
+          <url>http://www.microsoft.com/web/webpi/eula/aspnetcomponent_rtw_enu.htm</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/Microsoft.Owin.Security.Cookies@2.1.0</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://katanaproject.codeplex.com/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Microsoft.Owin.Security.Jwt@4.1.1">
+      <author>Microsoft</author>
+      <name>Microsoft.Owin.Security.Jwt</name>
+      <version>4.1.1</version>
+      <description>Middleware that enables an application to protect and validate JSON Web Tokens.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">376C49C2C4C9CCED70281F65C6682EA4A54C0DC41531B54DA034EA58172D8007784BCC7E61A4810BB43080AD152E750E5A60264A6107C01DBFB62CE8357FEB3A</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+      <purl>pkg:nuget/Microsoft.Owin.Security.Jwt@4.1.1</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/aspnet/AspNetKatana/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Microsoft.Owin.Security.OAuth@2.1.0">
+      <author>Microsoft</author>
+      <name>Microsoft.Owin.Security.OAuth</name>
+      <version>2.1.0</version>
+      <description>Middleware that enables an application to support any standard OAuth 2.0 authentication workflow.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">CBE7CF294A8BF498281669F610D8E56AE2206A65E1FFF0FCFBF92E486D23245E7823274E37AE0869555597A47EB42BFD657158EFA75FA930679FD9FD70387269</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>Unknown - See URL</name>
+          <url>http://www.microsoft.com/web/webpi/eula/aspnetcomponent_rtw_enu.htm</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/Microsoft.Owin.Security.OAuth@2.1.0</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://katanaproject.codeplex.com/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Microsoft.Owin.Security.OAuth@4.1.1">
+      <author>Microsoft</author>
+      <name>Microsoft.Owin.Security.OAuth</name>
+      <version>4.1.1</version>
+      <description>Middleware that enables an application to support any standard OAuth 2.0 authentication workflow.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">251F02A246FED63E116B113E9BBA52956B3F0219072583C3E6D67BA7D28F98BEBAED68248B5787594DBB3105E5D886741AE614DE0DD9FF1375EC3174A2BE870A</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+      <purl>pkg:nuget/Microsoft.Owin.Security.OAuth@4.1.1</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/aspnet/AspNetKatana/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Newtonsoft.Json@12.0.3">
+      <author>James Newton-King</author>
+      <name>Newtonsoft.Json</name>
+      <version>12.0.3</version>
+      <description>Json.NET is a popular high-performance JSON framework for .NET</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">6934665F0479C58BBE996C44F2BF16D435A72F4D92795F0BC1D40CB0BC1358FF0E660AC20B24EABCE01EE6145BD553506178E59FBAABD0F2A94B23BFA5C735F5</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+        </license>
+      </licenses>
+      <copyright>Copyright © James Newton-King 2008</copyright>
+      <purl>pkg:nuget/Newtonsoft.Json@12.0.3</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://www.newtonsoft.com/json</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/JamesNK/Newtonsoft.Json</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Owin@1.0">
+      <author>OWIN startup components contributors</author>
+      <name>Owin</name>
+      <version>1.0</version>
+      <description>OWIN IAppBuilder startup interface</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">8EAD139BC5547764612CDE543384B19E8758990A48204F6E4100C0608E5727F35C0133F442DF3FB131806255300B997979841F81EB1A02B35C4B9AA6EC81101C</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>Unknown - See URL</name>
+          <url>https://github.com/owin-contrib/owin-hosting/blob/master/LICENSE.txt</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/Owin@1.0</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/owin-contrib/owin-hosting/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/System.IdentityModel.Tokens.Jwt@6.9.0">
+      <author>Microsoft</author>
+      <name>System.IdentityModel.Tokens.Jwt</name>
+      <version>6.9.0</version>
+      <description>Includes types that provide support for creating, serializing and validating JSON Web Tokens.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">F7E4D72FBA3533E4BB6821BC43F6228A47646FDF084059AA83C4DFE6B77B7568BDFC9D3ABD3E373DFF89DD735F79C22D7F7CFAE3E9C824947EE9BAB63FAB8FF1</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+        </license>
+      </licenses>
+      <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+      <purl>pkg:nuget/System.IdentityModel.Tokens.Jwt@6.9.0</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/System.Net.Http@4.3.3">
+      <author>Microsoft</author>
+      <name>System.Net.Http</name>
+      <version>4.3.3</version>
+      <description>Provides a programming interface for modern HTTP applications, including HTTP client components that allow applications to consume web services over HTTP and HTTP components that can be used by both clients and servers for parsing HTTP headers.
+
+Commonly Used Types:
+System.Net.Http.HttpResponseMessage
+System.Net.Http.DelegatingHandler
+System.Net.Http.HttpRequestException
+System.Net.Http.HttpClient
+System.Net.Http.MultipartContent
+System.Net.Http.Headers.HttpContentHeaders
+System.Net.Http.HttpClientHandler
+System.Net.Http.StreamContent
+System.Net.Http.FormUrlEncodedContent
+System.Net.Http.HttpMessageHandler
+ 
+When using NuGet 3.x this package requires at least version 3.4.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">FF74696DECDF8FF973F90BFFE796DD2ACA35E8A859177F201D6F705F483447819F2B9BEBF73F568C3705F12AD537F00AD00F6C761FC0382DD89C2757F9418AA7</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>Unknown - See URL</name>
+          <url>http://go.microsoft.com/fwlink/?LinkId=329770</url>
+        </license>
+      </licenses>
+      <copyright>© Microsoft Corporation.  All rights reserved.</copyright>
+      <purl>pkg:nuget/System.Net.Http@4.3.3</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://dot.net/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/System.Net.Http.Extensions.Compression.Client@2.0.2">
+      <author>Ove Andersen</author>
+      <name>System.Net.Http.Extensions.Compression.Client</name>
+      <version>2.0.2</version>
+      <description>Module for Microsoft HTTP Client that enables GZip and Deflate support for incoming and outgoing requests. Please note that this is not an official Microsoft package.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">990238104FC051E0A8D4A02E18B34AAC2BA0A4B96DA9B5BC87B60949135BECFFF1FF7F5176161CAB77021040FCBCAEA1E5D9E2F8165B73647E064D599F3B6C7F</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>Unknown - See URL</name>
+          <url>http://www.eyecatch.no/licenses/apache-20/</url>
+        </license>
+      </licenses>
+      <copyright>Copyright EyeCatch 2016</copyright>
+      <purl>pkg:nuget/System.Net.Http.Extensions.Compression.Client@2.0.2</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/azzlack/Microsoft.AspNet.WebApi.MessageHandlers.Compression</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/System.Net.Http.Formatting.Extension@5.2.3.0">
+      <author>andre.agostinho</author>
+      <name>System.Net.Http.Formatting.Extension</name>
+      <version>5.2.3.0</version>
+      <description>Extesion Assembly System.Net.Http.Formatting.dll</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">77C213536C22FCE8A58385F17F97A16804C92806BDE5F5B0AED9D62E4F92CBBF0BD4A3320784542958A7B7459F39AA65013FFE915184996F4433316C4EB9DE03</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>Unknown - See URL</name>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/System.Net.Http.Formatting.Extension@5.2.3.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/WebSocketSharp-netstandard@1.0.1">
+      <author>sta</author>
+      <name>WebSocketSharp-netstandard</name>
+      <version>1.0.1</version>
+      <description>websocket-sharp provides the WebSocket protocol client and server.
+
+It supports:
+- RFC 6455
+- WebSocket Client and Server
+- Per-message Compression extension
+- Secure Connection
+- HTTP Authentication (Basic/Digest)
+- Query String, Origin header and Cookies
+- Connecting through the HTTP Proxy server
+- .NET 3.5 or later (includes compatible)</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">EFA90E066203B0EA4A0F0E32EE7672E5194D828B07779640F8E295E2EEE7DAA9B114CDF13DF9D6CFDF85718A53D7634B90D96337ED95D5A498E0E999E212F01A</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>Unknown - See URL</name>
+          <url>https://github.com/PingmanTools/websocket-sharp/blob/master/LICENSE.txt</url>
+        </license>
+      </licenses>
+      <copyright>sta.blockhead</copyright>
+      <purl>pkg:nuget/WebSocketSharp-netstandard@1.0.1</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/PingmanTools/websocket-sharp/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/PingmanTools/websocket-sharp/</url>
+        </reference>
+      </externalReferences>
+    </component>
+  </components>
+  <dependencies>
+    <dependency ref="E:\KOMI WEB@0.0.0">
+      <dependency ref="pkg:nuget/EntityFramework@6.1.0" />
+      <dependency ref="pkg:nuget/Microsoft.AspNet.Cors@5.2.4" />
+      <dependency ref="pkg:nuget/Microsoft.AspNet.Identity.Core@2.2.1" />
+      <dependency ref="pkg:nuget/Microsoft.AspNet.Identity.EntityFramework@2.2.1" />
+      <dependency ref="pkg:nuget/Microsoft.AspNet.Identity.Owin@2.2.1" />
+      <dependency ref="pkg:nuget/Microsoft.AspNet.WebApi@5.2.3" />
+      <dependency ref="pkg:nuget/Microsoft.AspNet.WebApi.Client@5.2.4" />
+      <dependency ref="pkg:nuget/Microsoft.AspNet.WebApi.Core@5.2.4" />
+      <dependency ref="pkg:nuget/Microsoft.AspNet.WebApi.Cors@5.2.4" />
+      <dependency ref="pkg:nuget/Microsoft.AspNet.WebApi.Extensions.Compression.Server@2.0.1" />
+      <dependency ref="pkg:nuget/Microsoft.AspNet.WebApi.MessageHandlers.Compression@2.0.0" />
+      <dependency ref="pkg:nuget/Microsoft.AspNet.WebApi.Owin@5.2.4" />
+      <dependency ref="pkg:nuget/Microsoft.AspNet.WebApi.WebHost@5.2.3" />
+      <dependency ref="pkg:nuget/Microsoft.Bcl@1.1.10" />
+      <dependency ref="pkg:nuget/Microsoft.Bcl.Build@1.0.14" />
+      <dependency ref="pkg:nuget/Microsoft.Bcl.Compression@3.9.85" />
+      <dependency ref="pkg:nuget/Microsoft.CodeDom.Providers.DotNetCompilerPlatform@1.0.0" />
+      <dependency ref="pkg:nuget/Microsoft.Net.Compilers@1.0.0" />
+      <dependency ref="pkg:nuget/Microsoft.Net.Http@2.2.29" />
+      <dependency ref="pkg:nuget/Microsoft.Owin@4.0.0" />
+      <dependency ref="pkg:nuget/Microsoft.Owin.Cors@4.0.0" />
+      <dependency ref="pkg:nuget/Microsoft.Owin.Host.SystemWeb@4.0.0" />
+      <dependency ref="pkg:nuget/Microsoft.Owin.Security@2.1.0" />
+      <dependency ref="pkg:nuget/Microsoft.Owin.Security.Cookies@2.1.0" />
+      <dependency ref="pkg:nuget/Microsoft.Owin.Security.OAuth@2.1.0" />
+      <dependency ref="pkg:nuget/Newtonsoft.Json@12.0.3" />
+      <dependency ref="pkg:nuget/Owin@1.0" />
+      <dependency ref="pkg:nuget/System.Net.Http.Extensions.Compression.Client@2.0.2" />
+      <dependency ref="pkg:nuget/BouncyCastle@1.8.9" />
+      <dependency ref="pkg:nuget/DotNetZip@1.13.3" />
+      <dependency ref="pkg:nuget/Microsoft.IdentityModel.JsonWebTokens@6.9.0" />
+      <dependency ref="pkg:nuget/Microsoft.IdentityModel.Logging@6.9.0" />
+      <dependency ref="pkg:nuget/Microsoft.IdentityModel.Tokens@6.9.0" />
+      <dependency ref="pkg:nuget/Microsoft.Owin@4.1.1" />
+      <dependency ref="pkg:nuget/Microsoft.Owin.Security@4.1.1" />
+      <dependency ref="pkg:nuget/Microsoft.Owin.Security.Jwt@4.1.1" />
+      <dependency ref="pkg:nuget/Microsoft.Owin.Security.OAuth@4.1.1" />
+      <dependency ref="pkg:nuget/System.IdentityModel.Tokens.Jwt@6.9.0" />
+      <dependency ref="pkg:nuget/WebSocketSharp-netstandard@1.0.1" />
+      <dependency ref="pkg:nuget/System.Net.Http@4.3.3" />
+      <dependency ref="pkg:nuget/System.Net.Http.Formatting.Extension@5.2.3.0" />
+      <dependency ref="pkg:nuget/Jace@0.8.7" />
+    </dependency>
+    <dependency ref="pkg:nuget/BouncyCastle@1.8.9" />
+    <dependency ref="pkg:nuget/DotNetZip@1.13.3" />
+    <dependency ref="pkg:nuget/EntityFramework@6.1.0" />
+    <dependency ref="pkg:nuget/Jace@0.8.7" />
+    <dependency ref="pkg:nuget/Microsoft.AspNet.Cors@5.2.4" />
+    <dependency ref="pkg:nuget/Microsoft.AspNet.Identity.Core@2.2.1" />
+    <dependency ref="pkg:nuget/Microsoft.AspNet.Identity.EntityFramework@2.2.1" />
+    <dependency ref="pkg:nuget/Microsoft.AspNet.Identity.Owin@2.2.1" />
+    <dependency ref="pkg:nuget/Microsoft.AspNet.WebApi.Client@5.2.4" />
+    <dependency ref="pkg:nuget/Microsoft.AspNet.WebApi.Core@5.2.4" />
+    <dependency ref="pkg:nuget/Microsoft.AspNet.WebApi.Cors@5.2.4" />
+    <dependency ref="pkg:nuget/Microsoft.AspNet.WebApi.Extensions.Compression.Server@2.0.1" />
+    <dependency ref="pkg:nuget/Microsoft.AspNet.WebApi.MessageHandlers.Compression@2.0.0" />
+    <dependency ref="pkg:nuget/Microsoft.AspNet.WebApi.Owin@5.2.4" />
+    <dependency ref="pkg:nuget/Microsoft.AspNet.WebApi.WebHost@5.2.3" />
+    <dependency ref="pkg:nuget/Microsoft.AspNet.WebApi@5.2.3" />
+    <dependency ref="pkg:nuget/Microsoft.Bcl.Build@1.0.14" />
+    <dependency ref="pkg:nuget/Microsoft.Bcl.Compression@3.9.85" />
+    <dependency ref="pkg:nuget/Microsoft.Bcl@1.1.10" />
+    <dependency ref="pkg:nuget/Microsoft.CodeDom.Providers.DotNetCompilerPlatform@1.0.0" />
+    <dependency ref="pkg:nuget/Microsoft.IdentityModel.JsonWebTokens@6.9.0" />
+    <dependency ref="pkg:nuget/Microsoft.IdentityModel.Logging@6.9.0" />
+    <dependency ref="pkg:nuget/Microsoft.IdentityModel.Tokens@6.9.0" />
+    <dependency ref="pkg:nuget/Microsoft.Net.Compilers@1.0.0" />
+    <dependency ref="pkg:nuget/Microsoft.Net.Http@2.2.29" />
+    <dependency ref="pkg:nuget/Microsoft.Owin.Cors@4.0.0" />
+    <dependency ref="pkg:nuget/Microsoft.Owin.Host.SystemWeb@4.0.0" />
+    <dependency ref="pkg:nuget/Microsoft.Owin.Security.Cookies@2.1.0" />
+    <dependency ref="pkg:nuget/Microsoft.Owin.Security.Jwt@4.1.1" />
+    <dependency ref="pkg:nuget/Microsoft.Owin.Security.OAuth@2.1.0" />
+    <dependency ref="pkg:nuget/Microsoft.Owin.Security.OAuth@4.1.1" />
+    <dependency ref="pkg:nuget/Microsoft.Owin.Security@2.1.0" />
+    <dependency ref="pkg:nuget/Microsoft.Owin.Security@4.1.1" />
+    <dependency ref="pkg:nuget/Microsoft.Owin@4.0.0" />
+    <dependency ref="pkg:nuget/Microsoft.Owin@4.1.1" />
+    <dependency ref="pkg:nuget/Newtonsoft.Json@12.0.3" />
+    <dependency ref="pkg:nuget/Owin@1.0" />
+    <dependency ref="pkg:nuget/System.IdentityModel.Tokens.Jwt@6.9.0" />
+    <dependency ref="pkg:nuget/System.Net.Http.Extensions.Compression.Client@2.0.2" />
+    <dependency ref="pkg:nuget/System.Net.Http.Formatting.Extension@5.2.3.0" />
+    <dependency ref="pkg:nuget/System.Net.Http@4.3.3" />
+    <dependency ref="pkg:nuget/WebSocketSharp-netstandard@1.0.1" />
+  </dependencies>
+</bom>
